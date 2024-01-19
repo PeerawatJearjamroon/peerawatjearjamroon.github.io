@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-header">
+        <a class="menu-item" href="Home.html">HOME</a>
+        <a class="menu-item active" href="Experience.html">EXPERIENCE</a>
+        <a class="menu-item" href="Project.html">PROJECT</a>
+        <a class="menu-item" href="Contact.html">CONTACT</a>
+    </header>
+  <div class="box row">
+
+
+    <div  class="row column side70">
+      <div class="card mid" style="border: 4px solid #9292D1;border-radius: 8px;">
+        <h1>COOPERATIVE EDUCATION INTERNSHIP</h1>
+        <img src="image/LSWP1.jpg" style=" width:45%; border-radius: 12px;">
+        <img src="image/LSWP2.png" style=" width:42.5%; border-radius: 12px;">
+        <h3>Lucky Star Weaving Company Limited</h3>
+        <p>Internship period : 19 June 2023 to 6 October 2023<br>
+          Maintenance Department</p>
+        <p>Lucky Star Weaving Company Limited, in the area of cleaner plastic cloth,
+          has developed creative products and services. Continuous standards that customers demand.</p>
+
+
+        <img src="image/NT2.png" style="width:60%; border-radius: 12px;">
+        <h3>National Telecommunications Public Company Limited</h3> 
+        <p>Internship period : 18 April 2023 to 16 June 2023</p>
+        <p>National Telecommunications Public Company Limited oversees telecommunications in Thailand as a public limited company.
+          Under the supervision of the Ministry of Digital Economy and Society.</p>
+      </div><!-- card -->
+
+
+      <div class="card" style="border: 4px solid #9292D1;border-radius: 8px;">
+        <h1 style="padding: 20px;text-align:center;">TRAINING</h1>
+            
+            <div class="mySlides">
+              <img class="imgB" src="image/C1.jpg" style="float: left; width:50%;">
+            </div>
+            <div class="mySlides">
+              <img class="imgB" src="image/C2.jpg" style="float: left; width:50%">
+            </div>
+            <div class="mySlides">
+              <img class="imgB" src="image/C3.jpg" style="float: left; width:50%">
+            </div>
+            <div class="mySlides">
+              <img class="imgB" src="image/C4.jpg" style="float: left; width:50%">
+            </div>
+            <div class="mySlides">
+              <img class="imgB" src="image/C5.png" style="float: left; width:50%">
+            </div>
+            <div class="mySlides">
+              <img class="imgB" src="image/C6.png" style="float: left; width:50%">
+            </div>
+            <div class="mySlides">
+              <img class="imgB" src="image/C7.jpg" style="float: left; width:50%">
+            </div>
+          
+
+            <div class="row">
+              <div class="column20">
+                <img class="imgB demo" src="image/C1.jpg" style="width:101.5%" onclick="currentSlide(1)">
+              </div>
+              <div class="column20">
+                <img class="imgB demo" src="image/C2.jpg" style="width:100%" onclick="currentSlide(2)">
+              </div>
+              <div class="column20">
+                <img class="imgB demo" src="image/C3.jpg" style="width:100%" onclick="currentSlide(3)">
+              </div>
+              <div class="column20">
+                <img class="imgB demo" src="image/C4.jpg" style="width:100%" onclick="currentSlide(4)">
+              </div>
+              <div class="column20">
+                <img class="imgB demo" src="image/C5.png" style="width:100%" onclick="currentSlide(5)">
+              </div>    
+              <div class="column20">
+                <img class="imgB demo" src="image/C6.png" style="width:100%" onclick="currentSlide(6)">
+              </div>
+              <div class="column20">
+                <img class="imgB demo" src="image/C7.jpg" style="width:100%" onclick="currentSlide(7)">
+              </div>
+            </div><!-- row -->
+      </div><!-- card -->
+    </div><!-- 70 -->
+
+    <div class="column side30">
+      <div class="card" style="border: 4px solid #9292D1;border-radius: 8px;">
+        <h1 style="text-align:center">EDUCATION</h1>
+        <p>Silpakorn University (Thailand),2020-2023<br>
+          Bachelor of Engineering (B.Eng)<br>
+          Faculty of Engineering and Industrial Technology<br>
+          Major in Electronic and Computer System <br>
+          Engineering | GPA : 2.71</p>
+        <p>Visuttharangsi School (Thailand),2017-2019<br>
+          Kanchanaburi<br>
+          Science-Math | GPA : 3.40</p>
+      </div>
+    </div>
+    
+  </div><!-- box row -->
+    
+    
+    
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+</body>
+</html>
