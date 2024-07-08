@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Resume</div>
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+            <li class="navbar-item"><a href="experience.html" class="navbar-link">Experience</a></li>
+            <li class="navbar-item"><a href="project.html" class="navbar-link">Project</a></li>
+            <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Other content of the webpage -->
+    <div class="project-con">
+        <div class="project-container" style="display:table;clear:both;">
+            <div>
+                <h2 style="text-transform: uppercase;">Real-time Temperature and Water Level Warning System for Yarn Extrusion Machine</h2>
+            </div>
+            <div>
+                <div class="project-info">
+                    <div class="project-item" style="text-align: center;">
+                        <span class="project-value">Real-time cooling tank temperature and water level notification system using internet-of-things technology. The system consists of an Arduino UNO R3 microcontroller receiving temperature and water level values from temperature sensors and ultrasonic sensor (Waterproof Ultrasonic Module) and performing onscreen display of the values. When the temperature or water level exceeded the threshold, the system wirelessly sent notification message and temperature or water level values to the line group of maintenance engineers and, at the same time, stored the warning record in the Google sheet. After installation and test a warning system, it was found that the system can notify the warning information via line group with 100% accuracy and approximately 2 second delay. In addition, user satisfaction of the system was good.</span>
+                    </div>
+                    
+                    <button class="pdf-button" onclick="window.open('Paper.pdf', '_blank')">
+                        <i class="fas fa-file-pdf"></i> Paper
+                    </button>
+                    
+                    <img src="img/project1.png" alt="" style="width: 45%; border-radius: 20px; display:  block; margin-left: auto; margin-right: auto; margin-bottom: 30px;padding-top: 10px;">
+                    
+                    <div class="Second">
+                        <img src="img/project2.png" alt="" style="width: 80%; border-radius: 20px; display:  block; margin-left: auto; margin-right: auto; margin-bottom: 20px;">
+                    </div>
+    
+                    <div class="Second">
+                        <img src="img/project3.png" alt="" style="width: 80%; border-radius: 20px; display:  block; margin-left: auto; margin-right: auto; margin-bottom: 20px;">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="project-container" style="margin-top: 20px;">
+            <div>
+                <h2 style="text-transform: uppercase;">Classroom Reservation System (mini project)</h2>
+            </div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="img/P1.png" alt="training" class="project-photo">
+                </div>
+              
+                <div class="mySlides fade">
+                    <img src="img/P2.png" alt="training" class="project-photo">
+                </div>
+              
+                <div class="mySlides fade">
+                    <img src="img/P3.png" alt="training" class="project-photo">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/P4.png" alt="training" class="project-photo">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/P5.png" alt="training" class="project-photo">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/P6.png" alt="training" class="project-photo">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/P7.png" alt="training" class="project-photo">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+              </div>
+              
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+
+    </div>
+    <!-- Other content of the webpage -->
+
+    <footer>
+        <div class="footer-content">
+            <ul class="navbar-menu" style="justify-content: center;">
+                <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="experience.html" class="navbar-link">Experience</a></li>
+                <li class="navbar-item"><a href="project.html" class="navbar-link">Project</a></li>
+                <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+            <p>Thank you for visiting! You can contact me on various social media platforms.</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/profile.php?id=100008266514595&mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/peerawatpong?igsh=MTU3ejM4ZjNoOHRmOQ%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/peerawat-jearjamroon" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://line.me/ti/p/ZuAtVT4G3I" target="_blank"><i class="fab fa-line"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MyWebsite.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
