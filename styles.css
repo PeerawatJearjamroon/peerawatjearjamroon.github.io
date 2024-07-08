@@ -367,7 +367,7 @@ footer {
     width: 60%;
 }
 .Second{float:left;}
-@media (min-width:1000px){
+@media (min-width:800px){
     .Second{
         width:50%
     }
@@ -487,6 +487,15 @@ footer {
     height: 100%;
 }
 
+.experience-img {
+    width: 80%;
+    border-radius: 20px;
+    display:  block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 1350px) {
     .experience-con {
         padding: 1rem 8rem;
@@ -541,6 +550,9 @@ footer {
 
     .experience-column {
         float: none;
+    }
+    .experience-img {
+        width: 100%;
     }
 }
 
