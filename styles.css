@@ -589,6 +589,24 @@ footer {
     color: #333;
 }
 
+.img-project1 {
+    width: 40%;
+    border-radius: 20px;
+    display:  block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.img-project2 {
+    width: 80%;
+    border-radius: 20px;
+    display:  block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
 
 .pdf-button {
     display: inline-flex;
@@ -652,6 +670,14 @@ footer {
 
     .project-column {
         float: none;
+    }
+
+    .img-project1 {
+        width: 100%;
+    }
+
+    .img-project2 {
+        width: 100%;
     }
 }
 
