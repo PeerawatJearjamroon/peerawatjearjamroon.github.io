@@ -17,34 +17,34 @@ body {
 }
 
 .mid {
-    text-align:center;
+    text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 /* --------------------------------------------Navbar-------------------------------------------- */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 15rem; /* เพิ่ม padding ซ้ายขวา */
+    padding: 1rem 15rem;
     background-color: #333;
     color: #fff;
-    position: fixed; /* เพิ่มคุณสมบัติ fixed เพื่อให้ Navbar ติดบนสุด */
-    top: 0; /* ตั้งค่า top เพื่อให้ Navbar ติดบนสุดของหน้าจอ */
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* แก้ไขค่า rgba */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* เพิ่ม transition เพื่อสร้างเอฟเฟกต์เมื่อเลื่อนหน้าจอ */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar.scrolled {
     transform: translateY(-100%);
-    background-color: #222; /* สีพื้นหลังเมื่อ Navbar เลื่อนขึ้น */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* แก้ไขค่า rgba */
+    background-color: #222;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4)
 }
 
 .navbar-brand {
@@ -89,25 +89,26 @@ body {
 
 .navbar-link:hover {
     background-color: #ffa500;
-    transform: translateY(-2px); /* เพิ่มเอฟเฟกต์เมาส์เพื่อเคลื่อนไหวขึ้นลง */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเอฟเฟกต์เมาส์ด้านล่าง */
-    color: #333; /* เปลี่ยนสีตัวหนังสือเป็นสีดำ */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
 }
 
 @media (max-width: 1200px) {
     .navbar {
-        padding: 1rem 2rem; /* ปรับ padding สำหรับหน้าจอขนาดเล็ก */
+        padding: 1rem 2rem;
     }
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .navbar {
-        padding: 1rem 2rem; /* ปรับ padding สำหรับหน้าจอขนาดเล็ก */
+        padding: 1rem 2rem;
     }
+
     .navbar-toggle {
         display: flex;
     }
+
     .navbar-menu {
         flex-direction: column;
         position: absolute;
@@ -119,16 +120,17 @@ body {
         background-color: #333;
         transition: height 0.3s ease;
     }
+
     .navbar-menu.active {
         height: calc(100vh - 70px);
     }
+
     .navbar-item {
         margin: 1.5rem 0;
         text-align: center;
     }
 }
 
-/* Additional Styles for Enhancements */
 .navbar .navbar-toggle.active .bar:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
@@ -140,6 +142,7 @@ body {
 .navbar .navbar-toggle.active .bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
 }
+
 /* --------------------------------------footer-------------------------------------------------------- */
 footer {
     background-color: #333;
@@ -161,11 +164,11 @@ footer {
     font-size: 28px;
     font-weight: 600;
     letter-spacing: 1.5px;
-    margin-bottom: 15px; /* Increased margin */
+    margin-bottom: 15px;
 }
 
 .footer-content p {
-    margin: 10px 0; /* Adjusted margin */
+    margin: 10px 0;
     font-size: 16px;
     line-height: 1.6;
 }
@@ -195,7 +198,7 @@ footer {
 
 .footer-bottom {
     background-color: #222;
-    padding: 20px 0; /* Increased padding */
+    padding: 20px 0;
     margin-top: 20px;
     border-top: 1px solid #444;
 }
@@ -205,6 +208,7 @@ footer {
     font-size: 14px;
     font-weight: 300;
 }
+
 /* --------------------------------------slideshow-------------------------------------------------------- */
 .slideshow-container {
     max-width: 1000px;
@@ -213,22 +217,20 @@ footer {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Hide slides by default */
-  .mySlides {
+}
+
+.mySlides {
     display: none;
-  }
-  
-  /* Image styles */
-  img {
+}
+
+img {
     vertical-align: middle;
     width: 100%;
     border-radius: 10px;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -241,29 +243,27 @@ footer {
     transition: 0.6s ease;
     user-select: none;
     border-radius: 15px;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+.next {
     right: 16px;
-  }
-  
-  .prev {
+}
+
+.prev {
     left: 16px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+}
+
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.6);
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot-container {
+}
+
+.dot-container {
     text-align: center;
     padding: 20px 0;
-  }
-  
-  .dot {
+}
+
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -272,40 +272,42 @@ footer {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active-Slides, .dot:hover {
+}
+
+.active-Slides,
+.dot:hover {
     background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
+}
+
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: 0.4}
-    to {opacity: 1}
-  }
-  
-  /* Responsive adjustments */
-  @media only screen and (max-width: 768px) {
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .text {
-      font-size: 16px;
-      padding: 8px 12px;
+        font-size: 16px;
+        padding: 8px 12px;
     }
-  
-    .prev, .next {
-      font-size: 16px;
-      padding: 12px;
+
+    .prev,
+    .next {
+        font-size: 16px;
+        padding: 12px;
     }
-  }
+}
 
 /* --------------------------------------home-------------------------------------------------------- */
-/* Global Styles */
-
-/* Container Styles */
 .home-con {
     padding: 1rem 15rem;
     padding-top: 75px;
@@ -333,7 +335,6 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Content Styles */
 .home-info {
     flex: 2;
     margin-top: 20px;
@@ -353,7 +354,6 @@ footer {
     color: #333;
 }
 
-/* Column Styles */
 .home-column {
     float: left;
     padding: 10px;
@@ -366,10 +366,14 @@ footer {
 .home-right {
     width: 60%;
 }
-.Second{float:left;}
-@media (min-width:800px){
-    .Second{
-        width:50%
+
+.Second {
+    float: left;
+}
+
+@media (min-width:800px) {
+    .Second {
+        width: 50%
     }
 
     .home-container h2 {
@@ -381,20 +385,21 @@ footer {
         margin-bottom: 20px;
     }
 }
-.Second{padding:0 8px}
 
-/* Media Queries for Responsiveness */
+.Second {
+    padding: 0 8px
+}
+
 @media (max-width: 1200px) {
     .home-con {
         padding: 1rem 2rem;
         padding-top: 75px;
     }
+
     .home-con2 {
         padding: 1rem 2rem;
         padding-top: 75px;
     }
-    
-    
 }
 
 @media (max-width: 768px) {
@@ -403,7 +408,7 @@ footer {
         padding-top: 75px;
     }
 
-    .home-con h2{
+    .home-con h2 {
         font-size: 22px;
     }
 
@@ -411,7 +416,8 @@ footer {
         flex-direction: column;
     }
 
-    .home-left, .home-right {
+    .home-left,
+    .home-right {
         width: 100%;
     }
 
@@ -419,6 +425,7 @@ footer {
         float: none;
     }
 }
+
 /* --------------------------------------------experience-------------------------------------------------- */
 .experience-con {
     padding: 1rem 15rem;
@@ -448,7 +455,6 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Content Styles */
 .experience-info {
     flex: 2;
     margin-top: 20px;
@@ -468,7 +474,6 @@ footer {
     color: #333;
 }
 
-/* Column Styles */
 .experience-column {
     float: left;
     padding: 10px;
@@ -490,7 +495,7 @@ footer {
 .experience-img {
     width: 80%;
     border-radius: 20px;
-    display:  block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -501,27 +506,30 @@ footer {
         padding: 1rem 8rem;
         padding-top: 75px;
     }
+
     .experience-con2 {
         padding: 1rem 2rem;
         padding-top: 75px;
     }
 }
-/* Media Queries for Responsiveness */
+
 @media (max-width: 1200px) {
     .experience-con {
         padding: 1rem 2rem;
         padding-top: 75px;
     }
+
     .experience-con2 {
         padding: 1rem 2rem;
         padding-top: 75px;
     }
-    
+
     .experience-content {
         flex-direction: column;
     }
 
-    .experience-left, .experience-right {
+    .experience-left,
+    .experience-right {
         width: 100%;
     }
 
@@ -535,8 +543,8 @@ footer {
         padding: 1rem 0.5rem;
         padding-top: 75px;
     }
-    
-    .experience-con h2{
+
+    .experience-con h2 {
         font-size: 22px;
     }
 
@@ -544,13 +552,15 @@ footer {
         flex-direction: column;
     }
 
-    .experience-left, .experience-right {
+    .experience-left,
+    .experience-right {
         width: 100%;
     }
 
     .experience-column {
         float: none;
     }
+
     .experience-img {
         width: 100%;
     }
@@ -564,7 +574,6 @@ footer {
 
 .project-container {
     margin: 10px;
-    /* margin: 10px auto; */
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -581,7 +590,6 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Content Styles */
 .project-info {
     flex: 2;
     margin-top: 20px;
@@ -604,7 +612,7 @@ footer {
 .img-project1 {
     width: 40%;
     border-radius: 20px;
-    display:  block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -614,7 +622,7 @@ footer {
 .img-project2 {
     width: 80%;
     border-radius: 20px;
-    display:  block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -648,18 +656,18 @@ footer {
     transform: translateY(1px);
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
     .project-con {
         padding: 1rem 2rem;
         padding-top: 75px;
     }
+
     .project-con2 {
         padding: 1rem 2rem;
         padding-top: 75px;
     }
-    
-    
+
+
 }
 
 @media (max-width: 768px) {
@@ -668,7 +676,7 @@ footer {
         padding-top: 75px;
     }
 
-    .project-con h2{
+    .project-con h2 {
         font-size: 22px;
     }
 
@@ -676,7 +684,8 @@ footer {
         flex-direction: column;
     }
 
-    .project-left, .project-right {
+    .project-left,
+    .project-right {
         width: 100%;
     }
 
@@ -705,9 +714,8 @@ footer {
 .contact-con {
     padding: 1rem 15rem;
     padding-top: 75px;
-    
-}
 
+}
 
 .contact-container {
     margin: 10px;
@@ -718,7 +726,6 @@ footer {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-
 .contact-container h2 {
     text-align: center;
     text-transform: uppercase;
@@ -728,7 +735,6 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Content Styles */
 .contact-content {
     display: flex;
     flex-direction: column;
@@ -775,7 +781,7 @@ footer {
         padding-top: 75px;
     }
 
-    .contact-con h2{
+    .contact-con h2 {
         font-size: 22px;
     }
 
